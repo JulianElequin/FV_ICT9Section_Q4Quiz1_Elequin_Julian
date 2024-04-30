@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<style type="text/css">
+
+	body {
+        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+        background-repeat: repeat;
+        background-size: 100%;
+    }	
+
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://www.bhmpics.com/downloads/kawaii-aesthetic-pc-Wallpapers/8.fe856b1e406139b98c03215b9b2d9c1e.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 26px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        h1 {font-family: Helvetica}
+	</style>
+</head>
+<center>
+<body>
+	<br>
+<h1>My Online Portfolio</h1>
+<br><br><br>
+<p></p>
+<form >
+	<p font="Helvetica">Gmail</p>
+	<input id="username" type="" name="" placeholder="username"><br><br>
+	<p font="Helvetica">Password</p>
+	<input id="password" type="" name="" placeholder="password"><br>
+	<button type="button" onclick="getInfo()"></button>
+</form>
+	<a href="mainpage.html" class="btn btn-success" target="_blank">Log In</a>
+
+<a href="page2.html"><p id="viewQ1"></p></a>
+
+<img id src=""><br>
+
+
+<script type="text/javascript">
+
+	function firstquarter()
+	{
+		document.getelemendByID('viewQ1').innerHTML="View Quarter 1 Project";
+		alert ("My firstquarter projects!")
+	}
+
+	var objPeople = [
+	{
+		username: "JulianMatt"
+		password: "LoveFood"
+	} 
+	]
+
+function getInfo() {
+	var username = document.getelemendByID("username").value
+	var username = document.getelemendByID("password").value
+	for(i = 0; i < objPeople.length; i++) {
+		if(username is == objPeople[i].username && password is == objPeople[i].password) {
+			console.log(username + "is logged in!!!")
+		}
+		else {
+			console.log("incorrect username or password")
+		}
+	}
+}	
+</script>
+</body>
+</center>
+</html>
